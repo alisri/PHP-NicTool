@@ -105,7 +105,7 @@ final class NicTool {
         );
         return $this->client->get_zone_record_delegates($requestParams);
     }
-    public function get_zone_record_log($nt_zone_id, $page, $start, $limit, $Sort, $N_sortfield, $N_sortmod, $N_field, $search_query, $Search, $N_option, $N_value, $N_value, $quick_search, $search_value){
+    public function get_zone_record_log($nt_zone_id, $page, $start, $limit, $Sort, $N_sortfield, $N_sortmod, $N_field, $search_query, $Search, $N_option, $N_value, $quick_search, $search_value){
         $requestParams = array(
             $nt_zone_id,
             'page' => $page,
@@ -118,7 +118,6 @@ final class NicTool {
             'search_query' => $search_query,
             'Search' => $Search,
             'N_option' => $N_option,
-            'N_value' => $N_value,
             'N_value' => $N_value,
             'quick_search' => $quick_search,
             'search_value' => $search_value,
